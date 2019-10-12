@@ -16,16 +16,14 @@ PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/rclone/rclone.git
 PKG_SOURCE_VERSION:=5d3323605080509cf53de5980443c6d02fd50a48
 PKG_SOURCE_DATE:=20191011
-# PKG_MIRROR_HASH:=d3e4524e9ccaa3fd9dcdd6e00cd8d07a301858f0c8ac42d2984484ebb1cabe03
 
 PKG_LICENSE:=GPLv3
 PKG_MAINTAINER:=ElonH <elonhhuang@gmail.com>
 
 PKG_BUILD_DEPENDS:=golang/host
-PKG_BUILD_PARALLEL:=1
+# PKG_BUILD_PARALLEL:=1
 
 GO_PKG:=github.com/rclone/rclone
-# GO_PKG_SOURCE_ONLY:=1
 
 include $(INCLUDE_DIR)/package.mk
 include $(TOPDIR)/feeds/packages/lang/golang/golang-package.mk
@@ -53,5 +51,16 @@ Cloud storage providers:
 	Yandex Disk, The local root/usr/binystem.
 endef
 
-$(eval $(call GoSrcPackage,$(PKG_NAME)))
+define Package/$(PKG_NAME)/install
+	# echo "++++++++++++++++++"
+	# echo "$(PKG_INSTALL_DIR)"
+	# echo "$(1)"
+	# echo "$(GO_PKG_BUILD_BIN_DIR)"
+	# echo "++++++++++++++++++"
+
+	$(INSTALL_DIR) $(1)/usr/bin/
+	$(INSTALL_BIN) $(GO_PKG_BUILD_BIN_DIR)/rclone $(1)/usr/bin/
+endef
+
+$(eval $(call GoBinPackage,$(PKG_NAME)))
 $(eval $(call BuildPackage,$(PKG_NAME)))
