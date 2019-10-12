@@ -10,7 +10,7 @@
 include $(TOPDIR)/rules.mk
 
 LUCI_TITLE:=LuCI support for Rclone
-# LUCI_DEPENDS:=+rclone +rclone-webui-react
+LUCI_DEPENDS:=+rclone +rclone-webui-react
 LUCI_PKGARCH:=all
 PKG_VERSION:=1.0.0
 PKG_RELEASE:=1
