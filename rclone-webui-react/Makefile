@@ -22,7 +22,7 @@ include $(INCLUDE_DIR)/package.mk
 PKG_SOURCE:=currentbuild.zip
 PKG_SOURCE_URL:=https://github.com/rclone/rclone-webui-react/releases/download/v$(PKG_VERSION)/
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
-PKG_HASH:=skip
+PKG_HASH:=8f09d67ddbd8923a8f57ea05dc6b82a711a65eed926a6bc61c1a88a13d960839
 
 define Package/$(PKG_NAME)
 	SECTION:=net
@@ -51,12 +51,7 @@ define Build/Compile
 endef
 
 define Package/$(PKG_NAME)/install
-	$(INSTALL_DIR) \
-		$(1)/www/rclone-webui-react
-	echo "--------"
-	echo "$(1)"
-	echo "$(PKG_BUILD_DIR)"
-	
+	$(INSTALL_DIR) $(1)/www/rclone-webui-react
 	$(CP) $(PKG_BUILD_DIR)/build/* $(1)/www/rclone-webui-react
 endef
 
