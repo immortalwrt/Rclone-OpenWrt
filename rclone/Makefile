@@ -21,7 +21,7 @@ PKG_LICENSE:=GPLv3
 PKG_MAINTAINER:=ElonH <elonhhuang@gmail.com>
 
 PKG_BUILD_DEPENDS:=golang/host
-# PKG_BUILD_PARALLEL:=1
+PKG_BUILD_PARALLEL:=1
 
 GO_PKG:=github.com/rclone/rclone
 
