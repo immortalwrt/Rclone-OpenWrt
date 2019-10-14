@@ -10,6 +10,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=rclone
+PKG_VERSION:=1.49.5
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
@@ -22,17 +23,26 @@ PKG_MAINTAINER:=ElonH <elonhhuang@gmail.com>
 
 PKG_BUILD_DEPENDS:=golang/host
 PKG_BUILD_PARALLEL:=1
-
+PKG_USE_MIPS16:=0 # https://github.com/openwrt/packages/issues/8498
+# TODO: mips-> ld: non-dynamic relocations refer to dynamic symbol __libc_start_main
+# https://www.linux-mips.org/archives/linux-mips/2009-05/msg00489.html
 GO_PKG:=github.com/rclone/rclone
+GO_PKG_EXCLUDES:=test
 
 include $(INCLUDE_DIR)/package.mk
 include $(TOPDIR)/feeds/packages/lang/golang/golang-package.mk
 
+# GO_PKG_LDFLAGS:=
+GO_PKG_LDFLAGS_X:=\
+	github.com/rclone/rclone/fs.Version=v$(PKG_VERSION)_$(PKG_SOURCE_DATE)\
+	main.Version=v$(PKG_VERSION) \
+	main.BuildUser=openwrt \
+	main.BuildHost=openwrt \
+	main.BuildStamp=$(SOURCE_DATE_EPOCH)
 
 define Package/$(PKG_NAME)
-	SECTION:=net
-	CATEGORY:=Network
-	SUBMENU:=File Transfer
+	SECTION:=utils
+	CATEGORY:=Utilities
 	TITLE:=rsync for cloud storage.
 	URL:=https://rclone.org
   	DEPENDS:=$(GO_ARCH_DEPENDS) 
