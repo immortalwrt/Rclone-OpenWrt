@@ -24,8 +24,6 @@ PKG_MAINTAINER:=ElonH <elonhhuang@gmail.com>
 PKG_BUILD_DEPENDS:=golang/host
 PKG_BUILD_PARALLEL:=1
 PKG_USE_MIPS16:=0 # https://github.com/openwrt/packages/issues/8498
-# TODO: mips-> ld: non-dynamic relocations refer to dynamic symbol __libc_start_main
-# https://www.linux-mips.org/archives/linux-mips/2009-05/msg00489.html
 GO_PKG:=github.com/rclone/rclone
 GO_PKG_EXCLUDES:=test
 
