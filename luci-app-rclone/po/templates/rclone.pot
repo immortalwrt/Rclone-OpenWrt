@@ -1,0 +1,85 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: feeds/Rclone-OpenWrt/luci-app-rclone/luasrc/model/cbi/rclone.lua:31
+msgid "Installed Web Interface"
+msgstr ""
+
+#: feeds/Rclone-OpenWrt/luci-app-rclone/luasrc/controller/rclone.lua:7
+#: feeds/Rclone-OpenWrt/luci-app-rclone/luasrc/model/cbi/rclone.lua:24
+msgid "Rclone"
+msgstr ""
+
+#: feeds/Rclone-OpenWrt/luci-app-rclone/luasrc/model/cbi/rclone.lua:25
+msgid ""
+"Rclone (\"rsync for cloud storage\") is a command line program to sync root/"
+"usr/bin and directories to and from different cloud storage providers."
+msgstr ""
+
+#: feeds/Rclone-OpenWrt/luci-app-rclone/luasrc/model/cbi/rclone.lua:33
+msgid "Webui React"
+msgstr ""
+
+#: feeds/Rclone-OpenWrt/luci-app-rclone/luasrc/model/cbi/rclone.lua:51
+msgid "all address"
+msgstr ""
+
+#: feeds/Rclone-OpenWrt/luci-app-rclone/luasrc/model/cbi/rclone.lua:44
+msgid "configure"
+msgstr ""
+
+#: feeds/Rclone-OpenWrt/luci-app-rclone/luasrc/model/cbi/rclone.lua:37
+msgid "global"
+msgstr ""
+
+#: feeds/Rclone-OpenWrt/luci-app-rclone/luasrc/model/cbi/rclone.lua:48
+msgid "listen address"
+msgstr ""
+
+#: feeds/Rclone-OpenWrt/luci-app-rclone/luasrc/model/cbi/rclone.lua:55
+msgid "listen port"
+msgstr ""
+
+#: feeds/Rclone-OpenWrt/luci-app-rclone/luasrc/model/cbi/rclone.lua:50
+msgid "local network address"
+msgstr ""
+
+#: feeds/Rclone-OpenWrt/luci-app-rclone/luasrc/model/cbi/rclone.lua:49
+msgid "localhost address"
+msgstr ""
+
+#: feeds/Rclone-OpenWrt/luci-app-rclone/luasrc/model/cbi/rclone.lua:77
+msgid "log"
+msgstr ""
+
+#: feeds/Rclone-OpenWrt/luci-app-rclone/luasrc/model/cbi/rclone.lua:71
+msgid "password"
+msgstr ""
+
+#: feeds/Rclone-OpenWrt/luci-app-rclone/luasrc/model/cbi/rclone.lua:81
+msgid "path"
+msgstr ""
+
+#: feeds/Rclone-OpenWrt/luci-app-rclone/luasrc/model/cbi/rclone.lua:61
+msgid "rclone configuration file path"
+msgstr ""
+
+#: feeds/Rclone-OpenWrt/luci-app-rclone/luasrc/model/cbi/rclone.lua:18
+msgid "rclone not run"
+msgstr ""
+
+#: feeds/Rclone-OpenWrt/luci-app-rclone/luasrc/model/cbi/rclone.lua:16
+msgid "rclone running"
+msgstr ""
+
+#: feeds/Rclone-OpenWrt/luci-app-rclone/luasrc/model/cbi/rclone.lua:27
+msgid "rclone state"
+msgstr ""
+
+#: feeds/Rclone-OpenWrt/luci-app-rclone/luasrc/model/cbi/rclone.lua:41
+msgid "run Rclone in daeman"
+msgstr ""
+
+#: feeds/Rclone-OpenWrt/luci-app-rclone/luasrc/model/cbi/rclone.lua:66
+msgid "username"
+msgstr ""
