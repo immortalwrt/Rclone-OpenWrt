@@ -38,7 +38,7 @@ s = m:section(TypedSection, 'global', translate('global'))
 s.addremove = false
 s.anonymous = true
 
-enable = s:option(Flag, 'enabled', translate('run Rclone in daeman'))
+enable = s:option(Flag, 'enabled', translate('run Rclone as daemon'))
 enable.rmempty = false
 
 s = m:section(TypedSection, 'conf', translate('configure'))
