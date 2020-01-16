@@ -48,7 +48,7 @@ s.anonymous = true
 o = s:option(ListValue, 'addr_type', translate('listen address'))
 o:value('local', translate('localhost address'))
 o:value('lan', translate('local network address'))
-o:value('wan', translate('all address'))
+o:value('all', translate('all address'))
 o.default = 'lan'
 o.rmempty = false
 
