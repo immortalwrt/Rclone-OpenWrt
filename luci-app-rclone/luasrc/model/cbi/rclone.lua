@@ -127,6 +127,8 @@ o = s:option(Value, 'no_proxy', translate('disable proxy'))
 o.placeholder = 'localhost,127.0.0.0/8'
 o.default = 'localhost,127.0.0.0/8'
 o.rmempty = false
+o.description = translate("This allows you to disable the proxy for specific hosts.").."<br>"..
+    translate("Hosts must be comma separated, and can contain domains or parts.")
 
 s = m:section(TypedSection, 'log', translate('log'))
 s.addremove = false
