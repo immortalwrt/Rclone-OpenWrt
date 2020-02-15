@@ -1,0 +1,122 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: luasrc/model/cbi/rclone.lua:114
+msgid "How to proxy rclone"
+msgstr ""
+
+#: luasrc/model/cbi/rclone.lua:41
+msgid "Installed Web Interface"
+msgstr ""
+
+#: luasrc/model/cbi/rclone.lua:37 luasrc/controller/rclone.lua:7
+msgid "Rclone"
+msgstr ""
+
+#: luasrc/model/cbi/rclone.lua:38
+msgid ""
+"Rclone (\"rsync for cloud storage\") is a command line program to sync root/"
+"usr/bin and directories to and from different cloud storage providers."
+msgstr ""
+
+#: luasrc/model/cbi/rclone.lua:43
+msgid "Webui React"
+msgstr ""
+
+#: luasrc/model/cbi/rclone.lua:61
+msgid "all address"
+msgstr ""
+
+#: luasrc/model/cbi/rclone.lua:54
+msgid "configure"
+msgstr ""
+
+#: luasrc/model/cbi/rclone.lua:126
+msgid "disable proxy for specific hosts"
+msgstr ""
+
+#: luasrc/model/cbi/rclone.lua:77
+msgid "download"
+msgstr ""
+
+#: luasrc/model/cbi/rclone.lua:76
+msgid "download configuration"
+msgstr ""
+
+#: luasrc/model/cbi/rclone.lua:116
+msgid "enable proxy"
+msgstr ""
+
+#: luasrc/model/cbi/rclone.lua:47
+msgid "global"
+msgstr ""
+
+#: luasrc/model/cbi/rclone.lua:58
+msgid "listen address"
+msgstr ""
+
+#: luasrc/model/cbi/rclone.lua:65
+msgid "listen port"
+msgstr ""
+
+#: luasrc/model/cbi/rclone.lua:60
+msgid "local network address"
+msgstr ""
+
+#: luasrc/model/cbi/rclone.lua:59
+msgid "localhost address"
+msgstr ""
+
+#: luasrc/model/cbi/rclone.lua:131
+msgid "log"
+msgstr ""
+
+#: luasrc/model/cbi/rclone.lua:105
+msgid "password"
+msgstr ""
+
+#: luasrc/model/cbi/rclone.lua:135
+msgid "path"
+msgstr ""
+
+#: luasrc/model/cbi/rclone.lua:111
+msgid "proxy"
+msgstr ""
+
+#: luasrc/model/cbi/rclone.lua:119
+msgid "proxy address"
+msgstr ""
+
+#: luasrc/model/cbi/rclone.lua:28
+msgid "rclone address"
+msgstr ""
+
+#: luasrc/model/cbi/rclone.lua:71
+msgid "rclone configuration file path"
+msgstr ""
+
+#: luasrc/model/cbi/rclone.lua:30
+msgid "rclone not run"
+msgstr ""
+
+#: luasrc/model/cbi/rclone.lua:27
+msgid "rclone running"
+msgstr ""
+
+#: luasrc/model/cbi/rclone.lua:39
+msgid "rclone state"
+msgstr ""
+
+#: luasrc/model/cbi/rclone.lua:123
+msgid ""
+"rclone will follow the standard environment variables for proxies, similar "
+"to cURL and other programs."
+msgstr ""
+
+#: luasrc/model/cbi/rclone.lua:51
+msgid "run Rclone as daemon"
+msgstr ""
+
+#: luasrc/model/cbi/rclone.lua:100
+msgid "username"
+msgstr ""
