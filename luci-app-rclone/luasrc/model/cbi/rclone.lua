@@ -108,6 +108,26 @@ o.placeholder = 'admin'
 o.default = 'admin'
 o.rmempty = false
 
+s = m:section(TypedSection, 'proxy', translate('proxy'))
+s.addremove = false
+s.anonymous = true
+s.description = "<a href=\"https://rclone.org/faq/#can-i-use-rclone-with-an-http-proxy\">"..translate("How to proxy rclone").."</a>"
+
+enable = s:option(Flag, 'enabled', translate('enable proxy'))
+enable.rmempty = false
+
+o = s:option(Value, 'proxy_addr', translate('proxy address'))
+o.placeholder = 'socks5://127.0.0.1:1080'
+o.default = 'socks5://127.0.0.1:1080'
+o.rmempty = false
+o.description = translate("rclone will follow the standard environment variables for proxies, similar to cURL and other programs.
+The content of the variable is protocol://server:port. The protocol value is commonly either http or socks5.")
+
+o = s:option(Value, 'no_proxy', translate('disable proxy for specific hosts'))
+o.placeholder = 'localhost,127.0.0.0/8'
+o.default = 'localhost,127.0.0.0/8'
+o.rmempty = false
+
 s = m:section(TypedSection, 'log', translate('log'))
 s.addremove = false
 s.anonymous = true
