@@ -1,8 +1,12 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8"
 
-#: luasrc/model/cbi/rclone.lua:114
-msgid "How to proxy rclone"
+#: luasrc/model/cbi/rclone.lua:115
+msgid "FAQ"
+msgstr ""
+
+#: luasrc/model/cbi/rclone.lua:131
+msgid "Hosts must be comma separated, and can contain domains or parts."
 msgstr ""
 
 #: luasrc/model/cbi/rclone.lua:41
@@ -19,6 +23,16 @@ msgid ""
 "usr/bin and directories to and from different cloud storage providers."
 msgstr ""
 
+#: luasrc/model/cbi/rclone.lua:124
+msgid ""
+"The content of the variable is protocol://server:port. The protocol value is "
+"commonly either http or socks5."
+msgstr ""
+
+#: luasrc/model/cbi/rclone.lua:130
+msgid "This allows you to disable the proxy for specific hosts."
+msgstr ""
+
 #: luasrc/model/cbi/rclone.lua:43
 msgid "Webui React"
 msgstr ""
@@ -32,7 +46,7 @@ msgid "configure"
 msgstr ""
 
 #: luasrc/model/cbi/rclone.lua:126
-msgid "disable proxy for specific hosts"
+msgid "disable proxy"
 msgstr ""
 
 #: luasrc/model/cbi/rclone.lua:77
@@ -43,7 +57,7 @@ msgstr ""
 msgid "download configuration"
 msgstr ""
 
-#: luasrc/model/cbi/rclone.lua:116
+#: luasrc/model/cbi/rclone.lua:117
 msgid "enable proxy"
 msgstr ""
 
@@ -67,7 +81,7 @@ msgstr ""
 msgid "localhost address"
 msgstr ""
 
-#: luasrc/model/cbi/rclone.lua:131
+#: luasrc/model/cbi/rclone.lua:133
 msgid "log"
 msgstr ""
 
@@ -75,7 +89,7 @@ msgstr ""
 msgid "password"
 msgstr ""
 
-#: luasrc/model/cbi/rclone.lua:135
+#: luasrc/model/cbi/rclone.lua:137
 msgid "path"
 msgstr ""
 
@@ -83,7 +97,7 @@ msgstr ""
 msgid "proxy"
 msgstr ""
 
-#: luasrc/model/cbi/rclone.lua:119
+#: luasrc/model/cbi/rclone.lua:120
 msgid "proxy address"
 msgstr ""
 
@@ -105,12 +119,6 @@ msgstr ""
 
 #: luasrc/model/cbi/rclone.lua:39
 msgid "rclone state"
-msgstr ""
-
-#: luasrc/model/cbi/rclone.lua:123
-msgid ""
-"rclone will follow the standard environment variables for proxies, similar "
-"to cURL and other programs."
 msgstr ""
 
 #: luasrc/model/cbi/rclone.lua:51
