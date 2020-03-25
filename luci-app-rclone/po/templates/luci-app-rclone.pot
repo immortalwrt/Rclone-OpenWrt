@@ -13,7 +13,11 @@ msgstr ""
 msgid "Installed Web Interface"
 msgstr ""
 
-#: luasrc/model/cbi/rclone.lua:37 luasrc/controller/rclone.lua:7
+#: luasrc/controller/rclone.lua:5
+msgid "NAS"
+msgstr ""
+
+#: luasrc/model/cbi/rclone.lua:37 luasrc/controller/rclone.lua:6
 msgid "Rclone"
 msgstr ""
 

@@ -23,7 +23,11 @@ msgstr "用逗号分隔地址,且地址必须包含(部分)域名"
 msgid "Installed Web Interface"
 msgstr "已安装Web界面"
 
-#: luasrc/model/cbi/rclone.lua:37 luasrc/controller/rclone.lua:7
+#: luasrc/controller/rclone.lua:5
+msgid "NAS"
+msgstr "存储"
+
+#: luasrc/model/cbi/rclone.lua:37 luasrc/controller/rclone.lua:6
 msgid "Rclone"
 msgstr "Rclone"
 
