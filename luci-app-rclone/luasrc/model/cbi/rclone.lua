@@ -69,8 +69,8 @@ o.datatype = 'port'
 o.rmempty = false
 
 o = s:option(Value, 'config_path', translate('rclone configuration file path'))
-o.placeholder = '/var/etc/rclone/rclone.conf'
-o.default = '/var/etc/rclone/rclone.conf'
+o.placeholder = '/etc/rclone/rclone.conf'
+o.default = '/etc/rclone/rclone.conf'
 o.rmempty = false
 
 o = s:option(Button,"config_download",translate("download configuration"))
