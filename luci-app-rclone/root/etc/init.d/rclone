@@ -28,12 +28,12 @@ init_config() {
 	config_get log_path log path
 
 	config_dir=${config_path%/*}
-	[ -d $config_dir ] || mkdir -p $config_dir
+	[ -d "$config_dir" ] || mkdir -p "$config_dir" 2>/dev/null
 
-	[ -f $config_path ] || touch $config_path
+	[ -f "$config_path" ] || touch "$config_path"
 
 	log_dir=${log_path%/*}
-	[ -d $log_dir ] || mkdir -p $log_dir && echo /dev/null > $log_path 
+	[ -d "$log_dir" ] || mkdir -p "$log_dir" 2>/dev/null && echo /dev/null > "$log_path"
 
 
 }
@@ -83,14 +83,14 @@ start_service() {
 	procd_append_param command --rc-allow-origin=*
 	procd_append_param command --log-file=${log_path}
 	if [ "${proxy_enable}" == "1" ]; then
-		procd_set_param env all_proxy=${proxy_addr} https_proxy=${proxy_addr} http_proxy=${proxy_addr}
-		procd_set_param env ALL_PROXY=${proxy_addr} HTTPS_PROXY=${proxy_addr} HTTP_PROXY=${proxy_addr} 
+		procd_set_param env all_proxy="${proxy_addr}" https_proxy="${proxy_addr}" http_proxy="${proxy_addr}"
+		procd_set_param env ALL_PROXY="${proxy_addr}" HTTPS_PROXY="${proxy_addr}" HTTP_PROXY="${proxy_addr}"
 	fi
 	procd_set_param stdout 1
 	procd_set_param stderr 1
 	procd_set_param file /etc/config/rclone
 	# procd_set_param pidfile /var/run/rclone.pid
-	procd_set_param user $user
+	procd_set_param user "$user"
 	procd_set_param group rclone
 	procd_set_param respawn retry=60
 	procd_close_instance
