@@ -63,7 +63,6 @@ start_service() {
 
 	config_get proxy_enable proxy enabled
 	config_get proxy_addr proxy proxy_addr
-	config_get no_proxy proxy no_proxy
 
 	config_get log_path log path
 
@@ -86,7 +85,6 @@ start_service() {
 	if [ "${proxy_enable}" == "1" ]; then
 		procd_set_param env all_proxy=${proxy_addr} https_proxy=${proxy_addr} http_proxy=${proxy_addr}
 		procd_set_param env ALL_PROXY=${proxy_addr} HTTPS_PROXY=${proxy_addr} HTTP_PROXY=${proxy_addr} 
-		procd_set_param env no_proxy=${no_proxy} NO_PROXY=${no_proxy}
 	fi
 	procd_set_param stdout 1
 	procd_set_param stderr 1
