@@ -5,10 +5,6 @@ msgstr "Content-Type: text/plain; charset=UTF-8"
 msgid "FAQ"
 msgstr ""
 
-#: luasrc/model/cbi/rclone.lua:131
-msgid "Hosts must be comma separated, and can contain domains or parts."
-msgstr ""
-
 #: luasrc/model/cbi/rclone.lua:41
 msgid "Installed Web Interface"
 msgstr ""
@@ -33,10 +29,6 @@ msgid ""
 "commonly either http or socks5."
 msgstr ""
 
-#: luasrc/model/cbi/rclone.lua:130
-msgid "This allows you to disable the proxy for specific hosts."
-msgstr ""
-
 #: luasrc/model/cbi/rclone.lua:43
 msgid "Webui React"
 msgstr ""
@@ -47,10 +39,6 @@ msgstr ""
 
 #: luasrc/model/cbi/rclone.lua:54
 msgid "configure"
-msgstr ""
-
-#: luasrc/model/cbi/rclone.lua:126
-msgid "disable proxy"
 msgstr ""
 
 #: luasrc/model/cbi/rclone.lua:77
@@ -85,7 +73,7 @@ msgstr ""
 msgid "localhost address"
 msgstr ""
 
-#: luasrc/model/cbi/rclone.lua:133
+#: luasrc/model/cbi/rclone.lua:126
 msgid "log"
 msgstr ""
 
@@ -93,7 +81,7 @@ msgstr ""
 msgid "password"
 msgstr ""
 
-#: luasrc/model/cbi/rclone.lua:137
+#: luasrc/model/cbi/rclone.lua:130
 msgid "path"
 msgstr ""
 
