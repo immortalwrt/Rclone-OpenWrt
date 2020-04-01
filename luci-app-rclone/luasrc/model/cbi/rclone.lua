@@ -72,6 +72,9 @@ o = s:option(Value, 'config_path', translate('rclone configuration file path'))
 o.placeholder = '/etc/rclone/rclone.conf'
 o.default = '/etc/rclone/rclone.conf'
 o.rmempty = false
+o.description = translate("Recommand: run ") ..
+    "<span style=\"background: lightgray;border-radius: 4px;padding-left: 4px;padding-right: 4px;\">rclone config --config rclone.conf</span>" ..
+    translate(" to setup configuration on pc,") .. "</br>" .. translate("than updaload configuration to here.")
 
 o = s:option(Button,"config_download",translate("download configuration"))
 o.inputtitle = translate("download")
