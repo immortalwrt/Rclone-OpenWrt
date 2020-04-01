@@ -1,7 +1,6 @@
 
 config global 'global'
 	option enabled '0'
-	option user 'rclone'
 
 config conf 'config'
 	option config_path '/etc/rclone/rclone.conf'
