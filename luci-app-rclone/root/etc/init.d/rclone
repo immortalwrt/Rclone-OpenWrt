@@ -1,4 +1,4 @@
-#!/bin/bash /etc/rc.common
+#!/bin/sh /etc/rc.common
 # Copyright (C) 2019 ElonH <elonhhuang@gmail.com>
 
 USE_PROCD=1
