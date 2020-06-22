@@ -83,6 +83,8 @@ m =
     'rclone',
     translate('Rclone'),
     translate('Rclone ("rsync for cloud storage") is a command line program to sync root/usr/bin and directories to and from different cloud storage providers.')
+        ' <br/> <br/> ' .. translate('rclone state') .. ' : ' .. state_msg .. '<br/> <br/>'
+        .. address_msg
 )
 end
 
