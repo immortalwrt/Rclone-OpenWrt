@@ -11,7 +11,7 @@ include $(TOPDIR)/rules.mk
 
 LUCI_TITLE:=LuCI support for Rclone
 LUCI_DEPENDS:=+rclone \
-              +PACKAGE_luci-app-rclone_INCLUDE_rclone-webui:rclone-webui \
+              +PACKAGE_luci-app-rclone_INCLUDE_rclone-webui:rclone-webui-react \
               +PACKAGE_luci-app-rclone_INCLUDE_rclone-ng:rclone-ng
 LUCI_PKGARCH:=all
 PKG_NAME:=luci-app-rclone
