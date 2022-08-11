@@ -10,7 +10,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=rclone-webui-react
-PKG_VERSION:=0.1.0
+PKG_VERSION:=2.0.5
 PKG_RELEASE:=1
 
 
@@ -22,7 +22,7 @@ include $(INCLUDE_DIR)/package.mk
 PKG_SOURCE:=currentbuild.zip
 PKG_SOURCE_URL:=https://github.com/rclone/rclone-webui-react/releases/download/v$(PKG_VERSION)/
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
-PKG_HASH:=06b9401779f82ef62fd22a9688549664228797d094b645a68a098c2310461fc5
+PKG_HASH:=afd6836ecc5c5a1161e25cb0633c1167eb5933bb5069545680d69fcba635f011
 
 define Package/$(PKG_NAME)
 	SECTION:=net

@@ -16,8 +16,8 @@ LUCI_DEPENDS:=+rclone \
               +PACKAGE_luci-app-rclone_INCLUDE_fuse-utils:fuse-utils
 LUCI_PKGARCH:=all
 PKG_NAME:=luci-app-rclone
-PKG_VERSION:=1.4.1
-PKG_RELEASE:=1
+PKG_VERSION:=1.4.1-3
+PKG_RELEASE:=
 PKG_LICENSE:=GPLv3.0+
 PKG_MAINTAINER:=ElonH <elonhhuang@gmail.com>
 
@@ -33,10 +33,6 @@ define Package/luci-app-rclone/description
 		Oracle Cloud Storage, ownCloud, pCloud, premiumize.me, put.io, QingStor, 
 		Rackspace Cloud root/usr/bin, rsync.net, Scaleway, SFTP, Wasabi, WebDAV, 
 		Yandex Disk, The local root/usr/binystem.
-endef
-
-define Package/luci-app-rclone/conffiles
-/etc/config/rclone
 endef
 
 define Package/luci-app-rclone/config
